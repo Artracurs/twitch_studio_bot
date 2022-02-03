@@ -6,7 +6,7 @@ wsh = comclt.Dispatch("WScript.Shell")
 class Bot(commands.Bot):
 
     def __init__(self):
-        super().__init__(token='...', prefix='!', initial_channels=['...'])
+        super().__init__(token='ACCESS_TOKEN', prefix='!', initial_channels=['...'])
 
     async def event_ready(self):
         print(f'Logged in as | {self.nick}')
@@ -22,8 +22,6 @@ class Bot(commands.Bot):
         wsh.AppActivate("TWITCH STUDIO")
         wsh.SendKeys("^L")
         await ctx.send(f'{ctx.author.name} вернул обратно в общий режим')
-
-
 
 
 
