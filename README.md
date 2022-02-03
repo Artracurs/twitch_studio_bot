@@ -10,3 +10,4 @@
 
 
 [pywin32](https://pypi.org/project/pywin32/)
+> pip install pywin32
